@@ -6,6 +6,7 @@ from wtforms.validators import DataRequired
 from flask_bootstrap import Bootstrap
 from bs4 import BeautifulSoup
 import lxml
+import os
 from smtplib import SMTP
 import envutils
 
@@ -19,7 +20,8 @@ class ContactForm(FlaskForm):
     message = CKEditorField("Your message here", validators=[DataRequired()])
     submit = SubmitField("Submit")
 # url_for(r'static\images\artwork')
-listaphotos = os.listdir(r'C:\Users\User\PycharmProject\tara_tattoo\static\images\artwork')
+#listaphotos = os.listdir(url_for('static/images/artwork'))
+listaphotos = [1,2,3,4,5,6]
 photo_urls = ["static/images/artwork/" + photo_name for photo_name in listaphotos]
 print(photo_urls)
 app = Flask(__name__)
