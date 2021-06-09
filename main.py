@@ -10,6 +10,8 @@ import lxml
 from smtplib import SMTP
 import envutils
 
+
+
 email = "nikoskorompoos@gmail.com"
 password = os.environ['password']
 class ContactForm(FlaskForm):
