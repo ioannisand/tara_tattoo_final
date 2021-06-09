@@ -9,11 +9,14 @@ import lxml
 import os
 from smtplib import SMTP
 import envutils
+from decouple import config
+
+
 
 
 
 email = "nikoskorompoos@gmail.com"
-password = "matsampoukas"
+password = config('PASSWORD')
 class ContactForm(FlaskForm):
     name = StringField("Name", validators=[DataRequired()])
     email = StringField("Email", validators=[DataRequired()])
