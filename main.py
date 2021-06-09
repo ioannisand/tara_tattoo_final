@@ -20,8 +20,8 @@ class ContactForm(FlaskForm):
     message = CKEditorField("Your message here", validators=[DataRequired()])
     submit = SubmitField("Submit")
 # url_for(r'static\images\artwork')
-#listaphotos = os.listdir(url_for('static/images/artwork'))
-listaphotos = [1,2,3,4,5,6]
+listaphotos = os.listdir(url_for('static/images/artwork'))
+
 photo_urls = ["static/images/artwork/" + photo_name for photo_name in listaphotos]
 print(photo_urls)
 app = Flask(__name__)
