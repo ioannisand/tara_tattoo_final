@@ -48,10 +48,11 @@ def contact_me():
         usermail = request.form.get('email')
         message = BeautifulSoup(request.form.get('message'), "lxml").text
         complete_message = f"Subject:Contact From Site\n\n A contact was made by{name} with {usermail}, the message is {message}"
+        completed_message = complete_message.encode("utf-8")
         connection =  SMTP("smtp.gmail.com")
         connection.starttls()
         connection.login(user=email, password=password)
-        connection.sendmail(from_addr=email, to_addrs="giannisloleus@gmail.com", msg=complete_message)
+        connection.sendmail(from_addr=email, to_addrs="andreadakidimitra06@gmail.com", msg=completed_message)
         return redirect(url_for('homepage'))
     return render_template('coontact.html', form=forma)
 
