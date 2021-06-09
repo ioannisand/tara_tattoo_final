@@ -8,9 +8,10 @@ import os
 from bs4 import BeautifulSoup
 import lxml
 from smtplib import SMTP
+import envutils
 
 email = "nikoskorompoos@gmail.com"
-password = "matsampoukas"
+password = os.environ['password']
 class ContactForm(FlaskForm):
     name = StringField("Name", validators=[DataRequired()])
     email = StringField("Email", validators=[DataRequired()])
