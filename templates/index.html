@@ -1,0 +1,65 @@
+{% include 'header.html' %}
+
+  <!-- About me Section -->
+  <section id="about-me-section">
+    <div class="container-fluid">
+      <div class="row about-me-cont">
+        <div class="col">
+          <img class="logo" src="{{url_for('static', filename='/images/tara_skull.png')}}">
+        </div>
+      </div>
+      <div class="row about-me-cont">
+        <div class="col">
+          <h2 class="About_Me_title headers">About Tara</h2>
+          <p class="about-me-paragraph smalltext">Tara did not check with Christos first about this.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artwork Section -->
+<section id="artwork-section">
+  <h2 class="headers">Artwork</h2>
+  <div class="container-fluid">
+      <div class="row">
+        {% for photo_url in photos: %}
+          <div class="col-lg-3 col-md-6 col-sm-12 artcont">
+            <div class="my-cont">
+              <a href="{{url_for('art_piece', num=photos.index(photo_url)+1)}}">
+                <img class="art" src="{{photo_url}}">
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+  </div>
+</section>
+
+<!--Contact Section-->
+<section id="Contact">
+  <h2 class="headers">Contact me</h2>
+  <div class="row contact">
+    <div class="col-md-4">
+    <a href="{{url_for('contact_me')}}">
+      <i class="fas fa-envelope fa-5x"></i>
+    </a>
+
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.facebook.com/profile.php?id=100024484907147">
+        <i class="fab fa-facebook-f fa-5x"></i>
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.instagram.com/tara.tatt00/">
+        <i class="fab fa-instagram fa-5x"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+
+</html>

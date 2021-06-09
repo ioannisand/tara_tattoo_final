@@ -1,0 +1,147 @@
+/* Universal */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  background-color: black;
+  text-align: center;
+}
+
+
+.headers {
+    font-size: 5rem;
+    font-weight: bold;
+    padding-bottom: 2%;
+    color: #fff;
+}
+
+
+.smalltext {
+    font-size:3rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/* Titties Section */
+#titties-section {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
+
+.tara_logo {
+    width:3 0%;
+    padding-top: 3%;
+}
+
+
+.pseudo-nav {
+    color: #fff;
+    padding-top: 3%;
+    font-size: 3rem;
+}
+
+.pseudo-nav:hover {
+    color: #fff;
+}
+
+
+/* About Me Section */
+#about-me-section {
+    background-color: black;
+}
+
+.about-me-cont {
+  padding: 10% 0 15%;
+}
+
+
+
+.About_Me_title {
+  color: #fff;
+}
+
+.about-me-paragraph {
+  color: #fff;
+  padding-bottom: 3%;
+}
+
+.bio-img {
+  height: 100%;
+  width: 100%;
+  position:relative;
+  bottom:8%;
+}
+
+.row.about-me-cont {
+    text-align: center;
+    padding: 5% 0;
+}
+
+.logo {
+    width:50%;
+    text-align:center;
+    max-width:300px;
+    position: relative;
+    left:10%;
+}
+
+/* Artwork section */
+
+
+.art {
+  width:90%;
+  padding:10%;
+  border-radius: 100%;
+  }
+
+.artcont {
+  text-align: center;
+}
+
+.my-cont{
+    text-align:center;
+}
+
+/* Contact Me Section */
+.contact {
+    text-align: center;
+    padding:10% 0;
+}
+.fa-5x {
+    color: #fff;
+    padding: 10% 0;
+}
+
+
+
+@media (min-width:500px) {
+
+    .tara_logo {
+        max-width:200px;
+        padding-top: 3%;
+    }
+
+    .smalltext {
+        font-size: 2rem;
+    }
+
+}
+
+
+.iamge {
+    padding: 15% 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media (min-width:1000px) {
+    .logo{
+        left:6%;
+    }
+}
+
+
+.formoclass {
+    color:white;
+}

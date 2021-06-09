@@ -1,0 +1,10 @@
+{% include 'header.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+<div class="formoclass">
+    {{ ckeditor.load() }}
+{{ wtf.quick_form(form, novalidate=True) }}
+
+</div>
+
+</body>
+</html>
