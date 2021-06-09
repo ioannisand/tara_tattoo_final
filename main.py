@@ -4,7 +4,6 @@ from wtforms import StringField, SubmitField
 from flask_wtf import FlaskForm
 from wtforms.validators import DataRequired
 from flask_bootstrap import Bootstrap
-import os
 from bs4 import BeautifulSoup
 import lxml
 from smtplib import SMTP
@@ -13,7 +12,7 @@ import envutils
 
 
 email = "nikoskorompoos@gmail.com"
-password = os.environ['password']
+password = "matsampoukas"
 class ContactForm(FlaskForm):
     name = StringField("Name", validators=[DataRequired()])
     email = StringField("Email", validators=[DataRequired()])
